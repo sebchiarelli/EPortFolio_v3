@@ -1,0 +1,54 @@
+.background{
+    background-image: url(image/tete.JPG);
+    display:inline;
+}
+img{
+    height:100%;
+    width:100%;
+}
+h1{
+    display: inline;
+    color: red;
+    -webkit-text-stroke: 2px black;
+}
+body{
+    margin:0;
+    padding:0;
+    background:no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url(image/tete.JPG);
+}
+p{
+    font-size: 50px;
+}
+
+nav{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+/* barre de navigation */
+.nav{
+    height:10%;
+    top:0;
+    width: auto;
+}
+button:hover{
+   color: rgb(136, 197, 227)
+}
+button{
+    color:white;
+    font-size:medium;
+    border:none;
+    width: 30%;
+    height:100%;
+    float: right;
+   
+    background-color: rgba(0, 0, 0, 0.0);
+}
+#image-nav{
+    margin:0;
+    padding:0;
+    width: 10%;
+    
+}
