@@ -1,57 +1,66 @@
-.background{
-    height: 100vh;
-    
-    background-image: url(../images/road_trip.jpg);
-    background-size: cover;
-}
+/* image de la barre de navigation */
 #bee{
     height:100%;
     width:100%;
 }
-
-h1{
-    display: inline;
-    color: red;
-    -webkit-text-stroke: 2px black;
-}
-body{
+/* conteneur de l'image de la barre de navigation */
+#image-nav{
     margin:0;
     padding:0;
-    background:no-repeat;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-image: url(../images/road_trip.jpg);
-}
-p{
-    font-size: 50px;
-}
-
-nav{
-    background-color: rgba(0, 0, 0, 0.3);
+    width: 3%;
+    
 }
 /* barre de navigation */
-.nav{
-    height:10%;
+nav{
+    background-color: rgba(0, 0, 0, 0.3);
+    height:5%;
     top:0;
     width: auto;
 }
-button:hover{
-   color: rgb(136, 197, 227)
-}
+
 button{
     color:white;
     font-size:medium;
     border:none;
-    width: 30%;
+    width: 32.33333333%;
     height:100%;
     float: right;
-   
     background-color: transparent;
 }
-#image-nav{
+button:hover{
+    color: rgb(136, 197, 227)
+ }
+
+/*image de fond*/
+div.background{
+    height: 100vh;
+    
+    
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/road_trip.jpg);
+    background-size: cover;
+    
+}
+
+h1{
+    color:white;
+    display: inline;
+   /* -webkit-text-stroke: 2px black;*/
+}
+
+p{
+    font-size: 50px;
+}
+
+body{
     margin:0;
     padding:0;
-    width: 10%;
-    
+
+}
+/*classe pour placer au centre d'un element */
+.center{
+    display: grid;
+    align-items: center;
+    height:100%;/* à delete*/
+    width: 100%;/* à delete*/
+    text-align: center;
 }
