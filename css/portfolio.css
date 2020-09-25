@@ -1,5 +1,5 @@
 /* image de la barre de navigation */
-#bee{
+#miniature{
     height:100%;
     width:100%;
 }
@@ -17,12 +17,28 @@ nav{
     top:0;
     width: auto;
 }
-
+/* when the user scrolled down*/
+.scrollnav{
+    animation-name: darken;
+    animation-duration: 3s;
+    background-color: rgb(0, 0, 0);
+    height:5%;
+    top:0;
+    width: auto;
+}
+@keyframes darken{
+    from{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    to{
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
 button{
     color:white;
     font-size: small;
     border:none;
-    width: 32.33333333%;
+    width: 32.3%;
     height:100%;
     float: right;
     background-color: transparent;
@@ -32,23 +48,20 @@ button:hover{
  }
 
 /*image de fond*/
-div.background{
-    height: 100vh;
-    
-    
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/road_trip.jpg), url(../images/sicile.jpg), url(../images/paugres.jpg), url(../images/italie.jpg), url(../images/ciotat.jpg), url(../images/puydufou.jpg);
+.background{
+    height: 100vh;   
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/road_trip.jpg), url(../images/puydufou.jpg), url(../images/ciotat.jpg);
     background-size: cover;
     
 }
 
 h1{
     color:white;
-    display: inline;
     -webkit-text-stroke: 0.2px black;
 }
 
 p{
-    font-size: 50px;
+    font-size: 30px;
 }
 
 body{
@@ -60,7 +73,62 @@ body{
 .center{
     display: grid;
     align-items: center;
-    height:30%;/* à delete*/
-    width: 100%;/* à delete*/
+    height:40%;/* à delete*/
+    width: 50%;/* à delete*/
     text-align: center;
+}
+
+/*2eme conteneur*/
+.background2{
+    height: 100vh;  
+    background: #f7f7f7; 
+}
+
+/* classe pour image de logo*/
+.logo{
+    margin: 4.5%;
+    height:20%;
+    width:15%;
+}
+/* cencé etre utiliser pour centré les images
+.image-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  } 
+*/
+ .projet{
+    width: 40%;
+    height: 40%;
+}
+
+img{
+    margin:2%;
+    height:40%;
+    width: 45%;
+}
+
+#projet1{
+    display:inline-block;
+    margin:2%;
+    height:40%;
+    width: 45%;
+    background-color:rgba(136, 197, 227, 0.5);
+}
+/* à delete*/
+.temp{
+   
+    height:100%;
+    width: 100%;
+    margin:0;
+   
+}
+p{
+    margin:0;
+    display:flex;
+    float: inline-start;
+}
+.rococo{
+    
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(121,9,17,1) 100%);
 }
