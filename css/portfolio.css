@@ -36,7 +36,7 @@ div.background{
     height: 100vh;
     
     
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/road_trip.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/road_trip.jpg), url(../images/sicile.jpg), url(../images/paugres.jpg), url(../images/italie.jpg), url(../images/ciotat.jpg), url(../images/puydufou.jpg);
     background-size: cover;
     
 }
