@@ -1,59 +1,92 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/portfolio.css">
+    
     <title>Document</title>
 </head>
-<body>    
+<body>
+<!-- navbar -->       
     <nav class="fixed-top">
-        <a id="image-nav" class="navbar-brand" href="#">
+        <a id="image-nav" class="navbar-brand" href="#section1">
             <img id="miniature" src="images/bumble_bee.png" alt="" loading="lazy">
-          </a>
-        <button><strong>MON PARCOURS</strong></button>
-        <button><strong>MES PROJETS</strong></button>
-        <button class="active"><strong>PRÉSENTATION</strong></button>
+        </a>
+        <a href="#section5"><button><strong>CONTACT</strong></button></a>
+        <a href="#section4"><button><strong>TECHNOLOGIES</strong></button></a>
+        <a href="#section3"> <button><strong>PROJETS</strong></button></a>
+        <a href="#section2"><button><strong>PARCOURS</strong></button></a>
     </nav>
-    <div class="background">
-        <h1 class="center">Chiarelli Sébastien, </br>developpeur front end junior.</h1>
-    </div>
-   
-    <div class="background2">
-        <p class="center">Bonjour et bienvenue sur mon site portfolio. Je m'appelle Chiarelli Sébastien, je suis fraichement reconvertit dans le développement WEB.</p>
-        <p>Voici les Langages que je maitrise.</p>
-        <img class="logo" src="images/HTML5Logo.png" alt="">
-        <img class="logo" src="images/CSSLogo.png" alt="">
-        <img class="logo" src="images/jsLogo.png" alt="">
-        <img class="logo" src="images/jqueryLogo.png" alt="">
+
+<!-- section 1 -->
+    <section id="section1">
+        <h1 class="title">Chiarelli Sébastien, </br>developpeur front end junior.</h1>
+    </section>
+
+<!-- section 2 -->
+    <section id="section2">
+        <h2>PARCOURS</h2>
+        <p>Bonjour et bienvenue sur mon site portfolio. Je m'appelle Chiarelli Sébastien, je suis fraîchement reconverti dans le développement WEB.</p>   
+    </section>
+
+<!-- section 3 -->
+    <section id="section3">
+        <H2>PROJET</H2>
        
-    </div>
-
-
-    <div class="rococo">
-                
-           <div id="projet1"> <img class="temp" src="img/todolist.JPG" alt="">
-            </div>
- 
-    
-       <a href="https://rgb-guessing-game-xx.netlify.app/" target="_blank">
+        <div id="projet1"> <img class="temp" src="img/todolist.JPG" alt="">
+        </div>
+        <a href="https://rgb-guessing-game-xx.netlify.app/" target="_blank">
             <img src="img/rgb_game.JPG" alt="">
         </a>
-        
         <a href="https://patatap-bi.netlify.app/" target="_blank">
             <img src="img/patatap.jpg" alt="">
         </a>    
-    
-        <a href="https://soeachampionship.netlify.app/" target="_blank">
+         <a href="https://soeachampionship.netlify.app/" target="_blank">
             <img src="img/livret.JPG" alt="">
         </a>
         <p>Une petite appli qui sert à noter les tâches à faire. Le contenu est stocké en Local storage, il sera enregistré et restitué même si vous fermez le navigateur ou éteignez l'ordinateur.</p>
         <p>Un jeu qui consiste à trouver à quelle case de couleur se rapporte au code RGB en haut de l'ecran. le RGB(red, green, blue) est un système de codage informatique des couleurs.</p>
         <p>Une appli qui associe les touches de clavier à un son enregistré, le tout animé. Les librairies paper.js et howler.js ont été utilisées respectivement pour l'animation et les sons</p>
         <p>Un livret de règle que j'ai rédigé, designé, mis en forme, et animé pour simuler un vrai livre grâce à la librairie turn.js</p>
-                
-    </div>
+    </section>
+
+<!-- section 4 -->
+    <section id="section4">
+        <h2>LES TECHNOLOGIES</h2>
+        <img class="logo" src="images/jsLogo.png" alt="">
+        <img class="logo" src="images/CSSLogo.png" alt="">
+        <img class="logo" src="images/HTML5Logo.png" alt="">
+        <img class="logo" src="images/PHPLogo.png" alt="">
+        <img class="logoLong" src="images/jqueryLogo.png" alt="">
+        <img class="logoLong" src="images/MySQLLogo.png" alt="">  
+    </section>
+
+<!-- section 5 -->
+    <section id="section5">
+        <h2>CONTACT</h2>
+        <p>Email: <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+          </svg></p>
+        <p><a href="mailto:seb13chiarelli@gmail.com"> seb13chiarelli@gmail.com</a></p>
+        <p>TELEPHONE: <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"/>
+           </svg></p>
+        <p><a href="tel:+33421230666">06 06 06 06 66</a></p>
+        <p>ADRESSE: <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-map" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M15.817.113A.5.5 0 0 1 16 .5v14a.5.5 0 0 1-.402.49l-5 1a.502.502 0 0 1-.196 0L5.5 15.01l-4.902.98A.5.5 0 0 1 0 15.5v-14a.5.5 0 0 1 .402-.49l5-1a.5.5 0 0 1 .196 0L10.5.99l4.902-.98a.5.5 0 0 1 .415.103zM10 1.91l-4-.8v12.98l4 .8V1.91zm1 12.98l4-.8V1.11l-4 .8v12.98zm-6-.8V1.11l-4 .8v12.98l4-.8z"/>
+          </svg></p>
+           <p><a href="https://goo.gl/maps/URzWTV67uiPQa3LD8" target="_blank"> allée du gayraie 12500 verlaba</a></p>
+        <a href="files/CV_Chiarelli_Sebastien.pdf">Mon CV</a>
+    </section>
+
+    
     <script src="js/portfolio.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
 </body>
 </html>

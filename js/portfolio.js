@@ -18,9 +18,15 @@ function change_background(){
 window.addEventListener('scroll',goingdown);
 
 function goingdown(){
-    nav.classList.add("scrollnav");
+    if(window.scrollY === 0){
+    nav.classList.add("scrollInitial");
+    nav.classList.remove("scrollDown");
+    }
+    else{
+    nav.classList.add("scrollDown");
+    nav.classList.remove("scrollInitial");
+    }
 }
-
 
 
 

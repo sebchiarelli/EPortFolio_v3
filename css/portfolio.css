@@ -1,27 +1,36 @@
-/* image de la barre de navigation */
+/* img of the navbar */
 #miniature{
     height:100%;
     width:100%;
 }
-/* conteneur de l'image de la barre de navigation */
+/* container for the navbar's image */
 #image-nav{
     margin:0;
     padding:0;
     width: 3%;
     
 }
-/* barre de navigation */
+/* navbar */
 nav{
     background-color: rgba(0, 0, 0, 0.3);
     height:5%;
     top:0;
     width: auto;
 }
-/* when the user scrolled down*/
-.scrollnav{
+/* when the user scrolls down*/
+.scrollDown{
     animation-name: darken;
     animation-duration: 3s;
     background-color: rgb(0, 0, 0);
+    height:5%;
+    top:0;
+    width: auto;
+}
+/* when the user scrolls to the top*/
+.scrollInitial{
+    animation-name: lighten;
+    animation-duration: 1s;
+    background-color:  rgba(0, 0, 0, 0.3);
     height:5%;
     top:0;
     width: auto;
@@ -34,11 +43,20 @@ nav{
         background-color: rgba(0, 0, 0, 1);
     }
 }
+@keyframes lighten{
+    from{
+        background-color: rgba(0, 0, 0, 1);      
+    }
+    to{
+        background-color: rgba(0, 0, 0, 0.3); 
+    }
+}
+
 button{
     color:white;
     font-size: small;
     border:none;
-    width: 32.3%;
+    width: 24%;
     height:100%;
     float: right;
     background-color: transparent;
@@ -47,12 +65,29 @@ button:hover{
     color: rgb(136, 197, 227)
  }
 
-/*image de fond*/
-.background{
+/*1st background container*/
+#section1{
     height: 100vh;   
     background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/road_trip.jpg), url(../images/puydufou.jpg), url(../images/ciotat.jpg);
     background-size: cover;
     
+}
+/*2nd background container*/
+#section2{
+    height: 120vh;
+}
+/*3rd background container*/
+#section3{
+    
+    background-color: yellow ;
+}
+/*4rd background container*/
+#section4{
+    height: 110vh;  
+    background: #f7f7f7; 
+}
+#section5{
+    height: 100vh;  
 }
 
 h1{
@@ -65,30 +100,39 @@ p{
 }
 
 body{
+    font-family: 'Montserrat', sans-serif;
     margin:0;
     padding:0;
 
 }
-/*classe pour placer au centre d'un element */
-.center{
+/*center element*/
+.title{
     display: grid;
     align-items: center;
     height:40%;/* à delete*/
     width: 50%;/* à delete*/
     text-align: center;
 }
-
-/*2eme conteneur*/
-.background2{
-    height: 100vh;  
-    background: #f7f7f7; 
+.center{
+    display: grid;
+    align-items: center;
+    margin-left: 20%;
+    margin-right:20%;
+    text-align: center;
 }
 
-/* classe pour image de logo*/
+
+
+/* logo's image*/
 .logo{
-    margin: 6%;
+    margin: 10% 6% 6% 6%;
     height:15%;
     width:12%;
+}
+.logoLong{
+    margin: 0% 14% 6% 14%;
+    height:15%;
+    width:20%;
 }
 /* cencé etre utiliser pour centré les images
 .image-container{
@@ -124,11 +168,24 @@ img{
    
 }
 p{
+    
+    font-family: 'Montserrat', sans-serif;
     margin:0;
     display:flex;
     float: inline-start;
 }
-.rococo{
+h2{
+    font-weight: 700;
     
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(121,9,17,1) 100%);
+    display: grid;
+    align-items: center;
+    padding-top: 5%;
+    margin-left: 20%;
+    margin-right:20%;
+    text-align: center;
 }
+svg{
+    height: AUTO;
+    width: AUTO;
+}
+
