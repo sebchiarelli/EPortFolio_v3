@@ -1,0 +1,294 @@
+/* img of the navbar */
+#miniature{
+    height:100%;
+    width:100%;
+}
+/* container for the navbar's image */
+#image-nav{
+    margin:0;
+    padding:0;
+    width: 3%;
+    
+}
+/* navbar */
+nav{
+    background-color: rgba(0, 0, 0, 0.3);
+    height:5%;
+    top:0;
+    width: auto;
+}
+/* when the user scrolls down*/
+.scrollDown{
+    animation-name: darken;
+    animation-duration: 3s;
+    background-color: rgb(0, 0, 0);
+    height:5%;
+    top:0;
+    width: auto;
+}
+/* when the user scrolls up to the top*/
+.scrollInitial{
+    animation-name: lighten;
+    animation-duration: 1s;
+    background-color:  rgba(0, 0, 0, 0.3);
+    height:5%;
+    top:0;
+    width: auto;
+}
+@keyframes darken{
+    from{
+        background-color: rgba(0, 0, 0, 0.3);
+    }
+    to{
+        background-color: rgba(0, 0, 0, 1);
+    }
+}
+@keyframes lighten{
+    from{
+        background-color: rgba(0, 0, 0, 1);      
+    }
+    to{
+        background-color: rgba(0, 0, 0, 0.3); 
+    }
+}
+
+button{
+    color:white;
+    font-size: small;
+    border:none;
+    width: 24%;
+    height:100%;
+    float: right;
+    background-color: transparent;
+}
+button:hover{
+    color: rgb(136, 197, 227)
+}
+
+/*1st background container - accueil*/
+#section1{
+    height: 100vh;   
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../images/road_trip.jpg), url(../images/puydufou.jpg), url(../images/ciotat.jpg);
+    background-size: cover;
+    
+}
+/*2nd background container - parcours*/
+#section2{
+    height: 120vh;
+}
+/*3rd background container - projet*/
+#section3{
+    height:120vh;
+}
+/*4rd background container - technologie*/
+#section4{
+    height: 110vh;  
+    background: #f7f7f7; 
+}
+/*5rd background container - contact*/
+#section5{
+    height: 100vh;  
+}
+
+h1{
+    color:white;
+    -webkit-text-stroke: 0.2px black;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;   
+    float: inline-start;
+    font-size: x-large;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin:0;
+    padding:0;
+
+}
+
+/*center element*/
+.title{
+    display: grid;
+    align-items: center;
+    height:40%;/* à delete*/
+    width: 50%;/* à delete*/
+    text-align: center;
+}
+
+.center{
+    display: grid;
+    align-items: center;
+    margin-left: 20%;
+    margin-right:20%;
+    text-align: center;
+}
+
+/* logo's image of section 4*/
+.logo{
+    margin: 10% 6% 6% 6%;
+    height:15%;
+    width:12%;
+}
+
+.logoWide{
+    margin: 0% 14% 6% 14%;
+    height:15%;
+    width:20%;
+}
+/* cencé etre utiliser pour centré les images
+.image-container{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+  } 
+*/
+
+img{
+    margin:2%;
+    height:40%;
+    width: 45%;
+}
+
+
+.projetContainer{
+    background-image: url('img/todolist.JPG');
+    background-size: cover;
+    border: white 1px solid;
+    float: left;
+    height: 50vh;
+    width: 50%;
+}
+
+
+h2{
+    font-weight: 700;    
+    display: grid;
+    align-items: center;
+    padding-top: 5%;
+    margin-left: 20%;
+    margin-right:20%;
+    text-align: center;
+}
+
+svg{
+    height: AUTO;
+    width: AUTO;
+}
+
+.containerProjetLeft{
+    margin: 0;
+    height: 50%;
+    width: 50%;
+    opacity: 0;
+    transition: opacity 0.5s; 
+    background-color: rgb(123, 154, 185);
+    position: absolute;
+    right:50%;
+    left: 0%;
+    color:white;
+    cursor: default;
+    font-size: x-large;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.containerProjetRight > p{
+    margin: 0;
+    height: 50%;
+    width: 50%;
+    opacity: 0;
+    transition: opacity 0.5s; 
+    background-color: rgb(123, 154, 185);
+    position: absolute;
+    right:0%;
+    left: 50%;
+    color:white;
+}
+
+.containerProjetLeft:hover{
+    opacity:0.95;
+}
+.containerProjetRight > p:hover{
+    opacity:0.95;
+}
+
+.buttonProjet{
+    display: block;
+    height:10%;
+    width: 20%;
+    margin: 20% 40% 0 40%;
+    border: 4px red solid;
+}
+
+.imageProjet{
+    float:left;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: opacity 0.5s; 
+}
+
+.imageProjet:hover{
+    opacity:0.2;
+}
+
+
+.projetButton{
+    display:flex;
+}
+
+h3{
+    display: inline-flex;
+    width: auto;
+}
+h3 > a{
+    width: auto;
+}
+#imgContact{
+    width: 100%;
+    height: 100%;
+    margin:0;
+}
+.imgContactContainer{
+    margin: 2% 0 2% 45%;
+    max-width:10%;
+    align-items: left;
+    
+}
+
+.contactItem{
+    /*margin: 0 6.6%;
+    width:20%;
+    display:inline-block; */
+    flex: 1
+}
+
+.centerContactItems{
+   /* width:40%;
+    margin: 0 auto;*/
+    justify-items: center;
+    display:grid;
+}
+
+.containerContact{
+    
+    margin: 5% 10% 5% 10%;
+    display: flex;
+}
+
+.smallFont{
+    color: #777;
+    font-size: 1rem;
+}
+hr {
+    margin-top: 3rem;
+    }
+a > svg{
+    color:black;
+}
+a.centerContactItems{
+    margin-top: 2%;
+}
